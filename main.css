@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+h2{
+  text-align: right;
+}
+
+header {
+  padding: 16px 0 16px;
+  margin-bottom: 56px;
+  background-color: rgb(250, 84, 8);
+  color: #fff;
+}
+
+header li {
+  display: inline;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.containerheader {
+  justify-content: space-between;
+}
+
+.containerheader a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.containerheader, .containerconteudo {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+ 
+
+.produto img {
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: #119759;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 1em 0 1em 0 ;
+}
+
+.sobre {
+  margin-bottom: 54px;
+}
+
+section h2 {
+  margin-bottom: 32px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 24.5%);
+  column-gap: 1%;
+  row-gap: 5%;
+}
+
+.catalogo p {
+  color: red;
+}
+
+footer {
+  background-color: rgb(250, 84, 8);
+  color: #f5f5ff;
+  padding: 16px 0;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 767px) { /*configuração responsividade mobile phone base iphone se*/
+  .conteudo {
+    display: block;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+  
+  .sobre .produto a {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  .sobre .produto img {
+    margin-right: 0;
+  }
+
+  .catalogo {
+    display: block;
+  }
+
+  .catalogo .produto {
+    margin-bottom: 32px;
+  }
+
+  aside {
+    padding-left: 0;
+  }
+
+  header div.container {
+    flex-direction: column;
+  }
+  
+  .submenu { /* Configurando Submenu*/
+    display: block;
+    width: 100%;
+    position: relative;
+    border: none;
+  }
+
+  .menu { /* Configurando menu invisivel*/
+    display: none;
+  }
+
+  .menu > li { /* Configurando menu linhas*/
+    clear: both;
+  }
+
+  .submenu li {
+    display: block;
+    padding: 8px;
+  }
+
+  .botao-menu { /* Configurando botao-menu*/
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .botao-menu button {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .botao-menu {
+    display: none;
+  }
+
+  .sobre .produto a {
+    font-size: 1.5em;
+  }
+
+  .catalogo {
+    grid-template-columns: repeat(2, 49%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .botao-menu {
+    display: none;
+  }
+  
+}
