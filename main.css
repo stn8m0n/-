@@ -5,10 +5,6 @@
   font-family: Roboto, sans-serif;
 }
 
-h2{
-  text-align: right;
-}
-
 header {
   padding: 16px 0 16px;
   margin-bottom: 56px;
@@ -29,6 +25,7 @@ header li {
 .containerheader a {
   text-decoration: none;
   color: #fff;
+
 }
 
 .menu li {
@@ -46,7 +43,14 @@ header li {
   display: grid;
   grid-template-columns: 90% 10%;
 }
- 
+
+.sobre1 h2{
+  border-bottom: 3px solid rgb(250, 84, 8);
+}
+
+.conteudo1 h2 {
+  border-bottom: 3px solid rgb(250, 84, 8);
+}
 
 .produto img {
   max-width: 100%;
@@ -68,7 +72,23 @@ button {
 }
 
 .sobre {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 54px;
+}
+
+.sobre img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sobre1 {
+  max-width: 50%;
+  text-align: left;
+}
+
+h2{
+  text-align: left;
 }
 
 section h2 {
