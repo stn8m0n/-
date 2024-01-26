@@ -106,6 +106,10 @@ section h2 {
   color: red;
 }
 
+.produto {
+  margin-bottom: 54px;
+}
+
 footer {
   background-color: rgb(250, 84, 8);
   color: #f5f5ff;
